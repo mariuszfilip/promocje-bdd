@@ -1,0 +1,1 @@
+php -f vendor\phpspec\phpspec\bin\phpspec %1 %2 %3 %4 %5

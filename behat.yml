@@ -1,0 +1,27 @@
+# behat.yml
+default:
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://localhost/inne/szkolenie-bdd/public/
+      goutte: ~
+      selenium2: ~
+    SensioLabs\Behat\PageObjectExtension: ~
+    Behat\GuzzleExtension:
+      base_url: http://localhost/inne/szkolenie-bdd/public/
+  suites:
+    example:
+      paths:
+        - %paths.base%/features/example.feature
+      contexts:
+        - ExampleContext
+
+    kal:
+      paths:
+        - %paths.base%/features/kal.feature
+      contexts:
+        - KalContext
+    prom:
+      paths:
+            - %paths.base%/features/promocja.feature
+      contexts:
+            - PromocjaContext
